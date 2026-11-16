@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #faf7f1; color: #30251e; line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+.topbar { min-height: 72px; padding: 12px 7%; display: flex; align-items: center; justify-content: space-between; gap: 18px; background: #fff; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid #eee5da; }
+.brand { font-family: Georgia, serif; font-size: 25px; font-weight: 700; color: #5b3825; white-space: nowrap; }
+.brand span { margin-right: 7px; }
+nav { display: flex; align-items: center; gap: 26px; font-size: 14px; font-weight: 700; }
+nav a:hover { color: #a66a3f; }
+.nav-cta, .primary { display: inline-block; background: #5b3825; color: #fff; padding: 11px 19px; border-radius: 28px; }
+.nav-cta:hover, .primary:hover, .buy:hover { background: #784d32; color: #fff; }
+.hero { padding: 76px 7%; background: linear-gradient(110deg, #eadbc8, #f7eee2); display: grid; grid-template-columns: 1.1fr .9fr; gap: 38px; align-items: center; }
+.eyebrow { color: #96613c; text-transform: uppercase; letter-spacing: 2px; font-size: 12px; font-weight: 700; margin: 0; }
+h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; }
+h1 { font-size: clamp(36px, 5vw, 62px); line-height: 1.12; margin: 15px 0 18px; max-width: 650px; }
+.hero-copy > p:not(.eyebrow) { max-width: 520px; color: #6d5a4b; margin: 0 0 27px; }
+.primary { font-weight: 700; }
+.hero-art { min-height: 290px; border-radius: 26px; background: linear-gradient(145deg, #6b422c, #2e2019); display: flex; align-items: center; justify-content: center; color: #f5e7d4; text-align: center; padding: 25px; box-shadow: 0 20px 45px #5b382533; }
+.cup { font-size: 100px; line-height: 1.2; }
+.hero-art strong { display: block; font-family: Georgia, serif; font-size: 26px; margin-top: 10px; }
+.hero-art span { font-size: 13px; }
+.section { padding: 66px 7%; }
+.section-head { text-align: center; margin-bottom: 34px; }
+.section-head h2, .why h2 { font-size: clamp(28px, 4vw, 36px); margin: 8px 0; }
+.section-head > p:last-child { color: #7c6b5e; }
+.products { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.product { min-width: 0; background: #fff; border: 1px solid #eee5da; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 24px #3823150b; }
+.product-art { height: 155px; background: linear-gradient(135deg, #e9d9c6, #c5a486); display: flex; align-items: center; justify-content: center; font-size: 68px; }
+.product-info { padding: 19px; }
+.product-info h3 { font-size: 20px; line-height: 1.25; min-height: 50px; margin: 0; }
+.price { color: #8b674c; font-weight: 700; margin: 10px 0 15px; }
+.buy { width: 100%; border: 0; border-radius: 22px; padding: 11px; background: #5b3825; color: #fff; font-weight: 700; cursor: pointer; }
+.buy:focus-visible, a:focus-visible { outline: 3px solid #c58b5d; outline-offset: 3px; }
+.notice { text-align: center; color: #5b3825; min-height: 24px; }
+.why { background: #efe6da; text-align: center; }
+.why h2 { margin-bottom: 12px; }
+.why > p:last-child { max-width: 700px; margin: auto; color: #6d5a4b; }
+footer { padding: 25px 7%; text-align: center; background: #30251e; color: #e9d9c6; font-size: 13px; }
+@media (max-width: 850px) { .products { grid-template-columns: repeat(2, minmax(0, 1fr)); } .hero { grid-template-columns: 1fr; } .hero-art { min-height: 220px; } }
+@media (max-width: 560px) { .topbar { padding: 12px 5%; align-items: flex-start; flex-direction: column; gap: 8px; } .brand { font-size: 22px; } nav { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 10px 14px; font-size: 13px; } .nav-cta { padding: 8px 13px; } .hero, .section { padding-left: 5%; padding-right: 5%; } .hero { padding-top: 48px; padding-bottom: 48px; } .products { gap: 12px; } .product-info { padding: 13px; } .product-info h3 { font-size: 17px; min-height: 44px; } .product-art { height: 120px; font-size: 52px; } }
+@media (max-width: 360px) { .products { grid-template-columns: 1fr; } }

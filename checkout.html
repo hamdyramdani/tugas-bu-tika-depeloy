@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Checkout pesanan Dunia Kopi.">
+  <title>Checkout Pesanan | Dunia Kopi</title>
+  <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+  <header class="header"><a href="index.html">← Kembali ke Produk</a><strong>☕ Dunia Kopi</strong></header>
+  <main class="wrap">
+    <section class="intro"><span>LANGKAH TERAKHIR</span><h1>Checkout Pesanan</h1><p>Isi data pengiriman sebelum mengonfirmasi pesanan.</p></section>
+    <div class="layout">
+      <section class="panel">
+        <h2>Data Pengiriman</h2>
+        <form id="formCheckout">
+          <label for="nama">Nama Penerima</label>
+          <input id="nama" name="nama" type="text" autocomplete="name" maxlength="80" placeholder="Masukkan nama penerima" required>
+          <label for="alamat">Alamat Lengkap</label>
+          <textarea id="alamat" name="alamat" rows="3" maxlength="300" autocomplete="street-address" placeholder="Nama jalan, nomor rumah, RT/RW" required></textarea>
+          <label for="kota">Kota / Kode Pos</label>
+          <input id="kota" name="kota" type="text" maxlength="100" autocomplete="address-level2" placeholder="Contoh: Tangerang, 15560" required>
+          <label for="hp">No. HP</label>
+          <input id="hp" name="hp" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9+() .-]{8,20}" placeholder="Masukkan nomor HP" required>
+          <div class="payment"><h3>Metode Pembayaran</h3><div class="cod">✓ Bayar di Tempat (COD)</div><small>Pembayaran dilakukan saat pesanan diterima.</small></div>
+          <button class="submit" type="submit">Konfirmasi Pesanan →</button>
+          <p class="form-error" id="formError" role="alert"></p>
+        </form>
+      </section>
+      <aside class="panel summary">
+        <h2>Ringkasan Pesanan</h2><div class="coffee" aria-hidden="true">☕</div>
+        <p id="namaProduk">Produk pilihan</p><strong id="hargaProduk">-</strong>
+        <hr><div class="total"><span>Total</span><strong id="totalProduk">-</strong></div>
+      </aside>
+    </div>
+  </main>
+  <script src="checkout.js"></script>
+</body>
+</html>

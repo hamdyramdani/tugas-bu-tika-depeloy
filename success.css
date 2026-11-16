@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; padding: 28px 14px; display: grid; place-items: center; background: #f6efe6; color: #30251e; font-family: Arial, Helvetica, sans-serif; line-height: 1.55; }
+.success-card { width: min(100%, 600px); background: #fff; border: 1px solid #eee5da; border-radius: 22px; padding: 34px; text-align: center; box-shadow: 0 15px 45px #38231512; }
+.check { width: 62px; height: 62px; display: grid; place-items: center; margin: 0 auto 16px; border-radius: 50%; background: #e7f0e2; color: #527044; font-size: 34px; font-weight: 700; }
+.eyebrow { color: #96613c; font-size: 11px; letter-spacing: 2px; font-weight: 700; }
+h1, h2 { font-family: Georgia, serif; }
+h1 { margin: 8px 0; font-size: clamp(29px, 5vw, 40px); }
+.sub { color: #78695e; margin: 0 auto 22px; max-width: 440px; }
+.order-number { padding: 12px; background: #f7f0e8; border-radius: 10px; font-size: 14px; }
+.order-number strong { color: #5b3825; margin-left: 5px; }
+.details { margin-top: 22px; text-align: left; border: 1px solid #eee5da; border-radius: 13px; padding: 18px; }
+.details h2 { margin: 0 0 12px; font-size: 21px; }
+.line { display: flex; justify-content: space-between; gap: 18px; padding: 8px 0; border-bottom: 1px solid #f0e9e1; font-size: 14px; }
+.line:last-child { border-bottom: 0; }
+.line span { color: #78695e; flex: 0 0 36%; }
+.line strong { text-align: right; overflow-wrap: anywhere; }
+.note { color: #78695e; font-size: 13px; }
+.actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 22px; }
+.main-button, .actions button { display: inline-block; border: 0; border-radius: 24px; padding: 12px 18px; background: #5b3825; color: #fff; text-decoration: none; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.actions button { background: #eee5da; color: #5b3825; }
+.main-button:hover { background: #784d32; }
+.actions button:hover { background: #e3d4c4; }
+.tracking { color: #5b3825; font-size: 13px; min-height: 20px; }
+@media (max-width: 480px) { .success-card { padding: 24px 17px; } .line { font-size: 13px; gap: 10px; } .line span { flex-basis: 32%; } .actions { flex-direction: column; } .actions a, .actions button { width: 100%; } }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Konfirmasi pesanan Dunia Kopi.">
+  <title>Pesanan Berhasil | Dunia Kopi</title>
+  <link rel="stylesheet" href="success.css">
+</head>
+<body>
+  <main class="success-card">
+    <div class="check" aria-hidden="true">✓</div>
+    <p class="eyebrow">TERIMA KASIH SUDAH MEMESAN</p>
+    <h1>Pesanan Berhasil!</h1>
+    <p class="sub">Pesanan kamu sudah tercatat di browser ini. Siapkan diri untuk menikmati kopi pilihanmu.</p>
+    <div class="order-number">Nomor Pesanan <strong id="nomorPesanan">-</strong></div>
+    <section class="details">
+      <h2>Detail Pesanan</h2>
+      <div class="line"><span>Produk</span><strong id="barang">-</strong></div>
+      <div class="line"><span>Total</span><strong id="total">-</strong></div>
+      <div class="line"><span>Nama Penerima</span><strong id="penerima">-</strong></div>
+      <div class="line"><span>Alamat</span><strong id="alamat">-</strong></div>
+      <div class="line"><span>No. HP</span><strong id="hp">-</strong></div>
+      <div class="line"><span>Pembayaran</span><strong id="pembayaran">COD</strong></div>
+    </section>
+    <p class="note">Pembayaran dilakukan saat pesanan diterima.</p>
+    <div class="actions"><a class="main-button" href="index.html">Kembali ke Beranda</a><button id="lacak" type="button">Lihat Info Pesanan</button></div>
+    <p class="tracking" id="infoPesanan" role="status" aria-live="polite"></p>
+  </main>
+  <script src="success.js"></script>
+</body>
+</html>
